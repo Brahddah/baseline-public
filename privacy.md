@@ -1,75 +1,67 @@
-# Baseline — proposed privacy policy
+# Baseline Privacy Policy
 
-> **Proposal for review. Not an effective privacy notice.** These are proposed commitments, not a claim that every safeguard is currently implemented. This proposal has no effective date. Operator contact information, service locations, and verification of the commitments are required before adoption. It should not be submitted as an active privacy notice.
+**Effective date:** 2026-10-26
 
-## 1. Purpose and scope
+**Privacy and support contact:** [coachphilvb@proton.me](mailto:coachphilvb@proton.me)
 
-Baseline is designed to help people review their sleep, recovery, and training-load history through long-term charts and summaries. The current policy scope is a personal pilot. Coach access, athlete rosters, and public sharing are not enabled. Future coaching would require specific athlete authorization and an updated notice before use.
+**Operator:** An individual operating Baseline
 
-If adopted, this policy would permit Baseline to process information only to provide functions the user requests, maintain their security and reliability, handle authorized support requests, and meet specific legal obligations. It would not grant ownership of the information or permission for unrelated uses.
+**Private dashboard hosting country:** United States
 
-## 2. Minimum information
+## 1. Scope and current status
 
-After WHOOP authorization, Baseline would retrieve cycle, recovery, and sleep records and save only the dated measurements needed for the dashboard: sleep duration, recovery score, strain, heart-rate variability, and resting heart rate. WHOOP responses may contain more detail than is saved. Complete raw responses would not be kept as a separate archive.
+This notice covers the Baseline project’s private beta and its public documentation page. Baseline is being developed for personal health-history analysis and, later, athlete-authorized coaching and practice-level workload review. Baseline is a project name; this notice does not represent it as an incorporated company.
 
-Necessary supporting information would include a local account identifier and configured display name; encrypted access and refresh tokens, their expiry and permissions; sync status and error categories; and limited sign-in and authorization records. Those records would include hashed session identifiers, authorization-state records, and hashed connection-address identifiers used to limit repeated login attempts. A hashed address identifier would not be treated as anonymous.
+WHOOP health-data imports, workout imports, athlete rosters, and coach sharing are not currently enabled. Developer registration or selecting an available OAuth scope does not activate these features. Health-data collection will remain disabled until the relevant safeguards are verified, an updated notice accurately describes the active service, and the user gives the required authorization.
 
-Support contact details and messages would be used only to resolve the user's request. Users should not send passwords, authorization tokens, or unnecessary health records to support.
+## 2. Information handled now
 
-Baseline would not request WHOOP profile, body-measurement or workout endpoints, location tracks, contacts, or continuous raw sensor streams. It would not collect a WHOOP password. Its own sign-in password would be checked against a salted password hash rather than stored as plaintext by the application.
+The private beta uses a local account identifier and configured display name, a salted password hash, and the session and security records needed to protect sign-in. These include hashed session identifiers, expiry times, authorization-state records, connection-address hashes for login-rate limiting, and limited service-status or error categories. Hashing an identifier does not make it anonymous.
 
-## 3. Authorization and history
+If you contact support, we receive the address and information you send. Please do not email passwords, authorization tokens, health records, or screenshots containing them. We use support messages only to resolve the request or meet a specific legal obligation.
 
-Before an import, the user would expressly authorize fetching and storing historical measurements for their requested charts. Declining an unrelated optional use would not block the core dashboard.
+The public documentation page is hosted on GitHub Pages. GitHub logs visitors’ IP addresses for security under its own privacy practices. The page has no forms, advertising pixels, analytics, session-replay tools, remote fonts, or third-party tracking scripts. It does not receive the private dashboard’s session cookie or database records.
 
-Long-term charts need dated historical measurements. Background updates need a refresh token so synchronization can continue when the dashboard is closed. Permissions would be limited to `read:cycles`, `read:recovery`, `read:sleep`, and `offline`, with no permission to change WHOOP records. Historical availability and storage would remain subject to WHOOP's API and applicable terms.
+## 3. Purpose and restrictions
 
-Authorized history would be kept only for the chosen dashboard until the user deletes it, disconnects, or the pilot ends, subject to any requirement for earlier deletion. Inactivity alone would not cause valuable history to be erased. Baseline would not promise an independent permanent archive of WHOOP data.
+Information is used only to provide the requested beta functions, keep the service secure and reliable, answer support requests, and meet specific legal obligations. We do not acquire ownership of personal information or permission for unrelated uses.
 
-## 4. Prohibited uses and sharing
+We do not sell, rent, license, or trade health data, and will not use it for advertising, marketing profiles, data brokerage, insurance or employment decisions, or an unrelated research dataset. These restrictions also cover derived and de-identified copies. Health records will not be sent to AI services or used to create, train, test, fine-tune, or improve AI models or systems.
 
-Baseline would not sell, rent, license, or trade health data. It would not use health data for advertising, marketing profiles, data brokerage, insurance or employment decisions, or an unrelated research dataset. These restrictions would also cover derived and de-identified copies.
+There is no automatic access for coaches, employers, insurers, other athletes, or other users. Authorized administration is limited to operating the service, a support request you authorize, a specific security incident, or a binding legal obligation. We do not routinely inspect individual health histories for product development.
 
-Health records would not be sent to AI services or used to create, train, test, fine-tune, or improve AI models or systems.
+## 4. Planned WHOOP functions and consent
 
-Coaches, employers, insurers, other athletes, and other users would receive no automatic access. Any future sharing feature would require a separate, specific choice identifying the recipient and information shared. Sharing would be off by default and could not be enabled by accepting a general policy update.
+The intended integration will request only the access needed for enabled features. Recovery, cycle, and sleep information support long-term trends. Individual workout records are needed to show strain and timing for a recorded practice. Profile access is optional and will not be requested unless an enabled feature requires it and the user is told why. Body-measurement access is not part of the starting scope.
 
-## 5. Access, providers, and security
+An OAuth refresh token is needed for background sync when the dashboard is closed. Baseline will not collect WHOOP passwords or request permission to change WHOOP records. API responses may contain more information than a displayed chart; the updated notice will identify which fields are retained before collection begins.
 
-The dashboard would remain private. Authorized administrators could access underlying records only when necessary for a support request the user authorizes, a specific security incident, or a binding legal obligation. Access would be limited to the information needed. Individual health histories would not be routinely read for product development.
+The user must expressly authorize the connection and historical storage before any import. Each athlete must authorize their own connection. Coach access will require a separate, specific choice identifying the recipient and information shared; creating a developer Team or joining a roster is not that consent. Personal-beta access does not establish multi-athlete isolation or sharing permissions.
 
-Health records, authorization tokens, and backups would be encrypted at rest and transmitted over appropriate encrypted connections, with restricted access. The server would still process readable measurements to calculate charts. This would not be end-to-end encryption that excludes the operator, and no system can guarantee protection against every incident.
+Historical measurements are necessary for long-term charts. The updated notice will explain retention, export, deletion, backup recovery, provider roles and relevant hosting locations before health imports are enabled. WHOOP’s API and terms may limit availability and storage; Baseline does not promise an independent permanent archive.
 
-WHOOP handles authorization and API requests under its own policies. Hosting and networking providers may process technical information needed to operate the service. Providers receiving health data, their roles, and relevant service locations would be identified before adoption or before a new health-data disclosure.
+## 5. Security and service providers
 
-The public policy page is separate from the health application and would not receive its session cookie or database records. GitHub Pages hosts this static documentation and logs visitors' IP addresses for security under GitHub's own privacy practices. The page contains no forms, advertising pixels, analytics, session-replay tools, or third-party tracking scripts.
+The private dashboard uses HTTPS and an essential HttpOnly sign-in cookie. Its session expires after eight hours or is invalidated when you sign out. The application verifies the Baseline password against a salted hash rather than storing it as plaintext. Device password managers and files you choose to download remain under your control.
 
-The dashboard would use no advertising or behavioral tracking. An essential sign-in cookie would expire after eight hours or be invalidated at sign-out. Device password managers and downloaded files would remain under the user's control.
+We are not claiming that all planned health-data protections are implemented. Before accepting WHOOP data, health-record storage, authorization tokens, backups, and relevant connections must meet the provider’s encryption requirements. A future server will need to process readable measurements for charts; the service is not represented as end-to-end encrypted against its operator. No system guarantees protection against every incident.
 
-Legally compelled disclosures would be assessed and limited to what is required, with user notice when legally permitted. Users affected by a security incident would be notified promptly with the known impact and protective steps, as required by applicable law.
+GitHub processes public-page access information under the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). Proton Mail provides the public support mailbox under the [Proton Mail Privacy Policy](https://proton.me/mail/privacy-policy). Proton identifies its mail-server locations as Switzerland, Germany, and Norway; email routing and a correspondent’s own mail provider can involve other locations. Proton’s policy states that its encrypted backups may be kept for up to 30 days, so deleting a support message from the mailbox is not a promise of immediate erasure from provider backups. The private dashboard is hosted in the United States. Additional providers receiving health data, their roles, and relevant service locations will be identified in the updated notice before those disclosures occur.
 
-## 6. Export, disconnection, and deletion
+We assess binding legal requests and disclose only what is required, with user notice when legally permitted. Security incidents affecting personal information will be addressed and reported as required by applicable law and relevant provider obligations.
 
-The dashboard would provide monthly-summary CSV downloads. Users could also request a machine-readable copy of stored daily measurements through the privacy contact established before adoption. A monthly CSV would not be presented as a complete daily-data export.
+## 6. Retention, access, and deletion
 
-**Disconnect WHOOP** would stop future synchronization and remove the saved WHOOP tokens, imported health records, and associated sync jobs from the active database. In-flight jobs would not be allowed to restore a deleted connection's history. Disconnection would remain separate from ending a browser session with **Sign out**.
+Session and authorization expiry prevents further use of an expired credential but is not a claim that its database record has already been physically deleted. Security records and administrative backups are used only for access protection, incident investigation, and recovery. This starting notice does not claim a scheduled seven-day purge or automatic backup expiry.
 
-Disconnecting Baseline would not delete information held by WHOOP and would not automatically revoke WHOOP's authorization grant. Users would also need to revoke access through WHOOP's connected-app controls. Revocation at WHOOP would prevent further authorized imports, but would not alone be treated as a request to erase existing Baseline copies; users would use Disconnect or the privacy contact for that purpose.
+You may use the privacy contact to request a copy, correction, or deletion of personal information held by Baseline. We verify identity without asking you to email passwords or authorization tokens, and respond without undue delay and within applicable legal deadlines. A deletion request includes active records and a review of administrative backups; any legal or technical retention limitation will be explained rather than presented as immediate complete erasure.
 
-Deleted information could remain in encrypted disaster-recovery backups for no more than seven days. Backup copies would be isolated from normal use and expire automatically. Recovery would apply deletion requests before returning the service to use, so deleted records and connections would not reappear. Minimal deletion markers could be retained only as necessary to enforce this protection, without health measurements or reusable credentials.
+Support messages are deleted after resolution when no longer needed, except for a specific legal obligation or a request from you to retain the correspondence. They are not used to train AI systems or build a marketing list.
 
-Operational security records would be removed within seven days of expiry or resolution, unless a specific legal obligation or documented active security investigation required longer retention. Exceptions would be limited to necessary records and end with their reason. There would be no general business-purposes exception for keeping health histories.
-
-Support correspondence would be deleted within 30 days after resolution unless the user requested longer retention or a specific legal obligation required it. Health information volunteered in a support message would receive the same restricted-use treatment as imported records.
-
-Users could request access, correction, or deletion through the privacy contact. Identity checks would not require emailing passwords or tokens. Responses would be provided within 30 days or a shorter applicable deadline. Corrections to WHOOP-source information might need to be made in WHOOP and then synchronized. Statutory rights would not be limited by this policy.
+Before health-data imports start, the updated notice and service must provide a clear way to obtain stored daily measurements, not merely monthly chart summaries, and delete the connection and imported records. Any backup retention limit must be supportable and deletion requests must be applied before a restored service returns to use. Deleting Baseline records will not delete records held independently by WHOOP. WHOOP-side revocation and Baseline deletion will be explained as separate controls unless automatic revocation is implemented and verified.
 
 ## 7. Changes and closure
 
-Users would receive notice before material privacy changes. A policy update or continued use would not authorize a new purpose for previously collected health data. Broader collection, sharing, or use would require a separate affirmative choice and must also be allowed by WHOOP's terms and applicable law.
+Material changes will be explained before they apply. A policy change or continued use alone does not authorize a new use of previously collected health data. Broader collection or sharing requires a separate affirmative choice and must also be permitted by WHOOP’s terms and applicable law.
 
-If the pilot closed, users would receive notice and an export opportunity where practicable, followed by deletion of active health records and tokens. Backup copies would expire within the same seven-day limit. Health histories would not be transferred to a buyer or successor as business assets.
-
----
-
-**Status:** public proposal only. No effective date or public privacy-contact channel has been established here. Adoption requires a complete, accurate notice and verified implementation of its commitments. This document is not a claim of regulatory compliance or a substitute for legal review.
+If the beta closes, we will provide notice and an export opportunity where practicable and explain deletion of remaining personal information and backups. Health histories will not be transferred to a buyer or successor as business assets. Nothing in this notice limits rights under applicable law.
